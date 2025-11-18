@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="project1.css">
+    </head>
+    <body>
+        <h1>Survey Form</h1>
+        <p>Please take the time to fill in this survey and tell us your experience.</p>
+        <section id="surveyform">
+            <form>
+                <label for="name" class="labels">Name:</label>
+                <input id="name" type="text" placeholder="Your Name" required><br>
+                <label for="email" class="labels">Email:</label>
+                <input id="email" type="email" placeholder="Your Email" required><br>
+                <label for="number" class="labels">Age:(optional)</label>
+                <input id="number" type="number" min="18" max="100" placeholder="Age" ><br>
+                <label for="degree">Which option best describes your role?</label><br>
+                <select id="degree">
+                    <option>Undergrad</option>
+                    <option>Grad</option>
+                    <option>Other</option>
+                </select>
+                <p>Would you recommend us?</p>
+                <input type="radio" id="radio1" name="radio">
+                <label for="radio1">Yes</label>
+                <input type="radio" id="radio2" name="radio">
+                <label for="radio2">No</label>
+                <input type="radio" id="radio3" name="radio">
+                <label for="radio3">Maybe</label>
+                <p>Would you like to add a comment?</p>
+                <textarea id="textarea" placeholder="Add your comment here...">
+                </textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </body>
+</html>
